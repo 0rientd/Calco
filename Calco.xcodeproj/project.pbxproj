@@ -11,8 +11,8 @@
 		67DF4C04248372E30056F814 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DF4C03248372E30056F814 /* SceneDelegate.swift */; };
 		67DF4C06248372E30056F814 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DF4C05248372E30056F814 /* ViewController.swift */; };
 		67DF4C09248372E30056F814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DF4C07248372E30056F814 /* Main.storyboard */; };
-		67DF4C0B248372E40056F814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DF4C0A248372E40056F814 /* Assets.xcassets */; };
 		67DF4C0E248372E40056F814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DF4C0C248372E40056F814 /* LaunchScreen.storyboard */; };
+		67DF4C16248383070056F814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DF4C15248383070056F814 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,10 @@
 		67DF4C03248372E30056F814 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		67DF4C05248372E30056F814 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67DF4C08248372E30056F814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		67DF4C0A248372E40056F814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67DF4C0D248372E40056F814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67DF4C0F248372E40056F814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67DF4C15248383070056F814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67DF4C1724838AB70056F814 /* Calco.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calco.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +57,12 @@
 		67DF4C00248372E30056F814 /* Calco */ = {
 			isa = PBXGroup;
 			children = (
+				67DF4C1724838AB70056F814 /* Calco.entitlements */,
 				67DF4C01248372E30056F814 /* AppDelegate.swift */,
 				67DF4C03248372E30056F814 /* SceneDelegate.swift */,
 				67DF4C05248372E30056F814 /* ViewController.swift */,
 				67DF4C07248372E30056F814 /* Main.storyboard */,
-				67DF4C0A248372E40056F814 /* Assets.xcassets */,
+				67DF4C15248383070056F814 /* Assets.xcassets */,
 				67DF4C0C248372E40056F814 /* LaunchScreen.storyboard */,
 				67DF4C0F248372E40056F814 /* Info.plist */,
 			);
@@ -126,7 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67DF4C0E248372E40056F814 /* LaunchScreen.storyboard in Resources */,
-				67DF4C0B248372E40056F814 /* Assets.xcassets in Resources */,
+				67DF4C16248383070056F814 /* Assets.xcassets in Resources */,
 				67DF4C09248372E30056F814 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Calco/Calco.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 545L3SRNC5;
 				INFOPLIST_FILE = Calco/Info.plist;
@@ -293,6 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = orientd.Calco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Calco/Calco.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 545L3SRNC5;
 				INFOPLIST_FILE = Calco/Info.plist;
@@ -311,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = orientd.Calco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
